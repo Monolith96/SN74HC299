@@ -25,7 +25,7 @@ void SN74HC299::begin() {
 
 ///@brief reads digital state of the specified pin
 ///@param pin : pin number
-///@param readPhysical : if true, the digital state present on the physical pin is reported, and if false, virtual value is reported which was set with digitalWrite.
+///@param readPhysical : if true, the digital state present on the physical pin is reported, and if false, virtual value is reported which was set with pinWrite.
 uint8_t SN74HC299::pinRead(uint8_t pin, bool readPhysical) {
   if (pin > _numPins) {
     return;
@@ -141,4 +141,5 @@ uint64_t SN74HC299::read() {
   }
   return retval;
 }
+
 
