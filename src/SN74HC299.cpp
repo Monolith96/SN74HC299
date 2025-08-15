@@ -132,18 +132,19 @@ uint64_t SN74HC299::read() {
   clock(1);
   //shift
   mode_ShiftLeft();
-  byte retval = 0;
+  uint64_t retval=0;
   //shift
   for (int i = 0; i < _numPins; i++) {
     //after the first clock after mode_Load(), first bit is already present at pQ7
     if (digitalRead(pD0))
-      pinDataReg |= (uint64_t)1 << i;  
+      retval |= (uint64_t)1 << i;  
     else
-      pinDataReg &= ~((uint64_t)1 << i);  
+      retval &= ~((uint64_t)1 << i);  
     clock(1);
   }
   return retval;
 }
+
 
 
 
