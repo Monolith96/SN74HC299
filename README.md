@@ -5,5 +5,5 @@ for more advanced projects which need output state retention during each pinWrit
 
 ![image](https://github.com/user-attachments/assets/4b5c4c4d-476f-4f72-95d2-790c58572885)
 
-here's a demo video
-![Youtube](https://www.youtube.com/watch?v=-GAqLGjc2NI)
+here's a demo video on
+[Youtube](https://www.youtube.com/watch?v=-GAqLGjc2NI)
