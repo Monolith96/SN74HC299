@@ -1,6 +1,6 @@
 
 This basic library expands Arduino I/O lines up to 64 pins using 74HC299 IC (8x cascaded)
-and allows for both read and write operations taking only 5 pins on the MCU.</br?
+and allows for both read and write operations taking only 5 pins on the MCU.</br>
 also offering expanded bit/byte manipulation with less effot.
 
 ### 4x Cascaded HC299s:</br>
