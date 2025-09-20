@@ -18,7 +18,7 @@ public:
   uint64_t read(bool updateReg = false);
   void write(uint64_t data, bool updateReg =  false);
   void pinWrite(uint8_t pin, uint8_t value, bool writePhysical = true);
-  uint8_t pinRead(uint8_t pin, bool readPhysical);
+  uint8_t pinRead(uint8_t pin, bool readPhysical = true);
   uint64_t getPinDataReg();
   void setPinDataReg(uint64_t data);
   void commit();
@@ -42,3 +42,4 @@ private:
   uint64_t pinDataReg;
 };
 #endif
+
