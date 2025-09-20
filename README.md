@@ -1,11 +1,14 @@
 
 This basic library expands Arduino I/O lines up to 64 pins using 74HC299 IC (8x cascaded)
-and allows for both read and write operations taking only 5 pins on the MCU.
+and allows for both read and write operations taking only 5 pins on the MCU.</br?
 also offering expanded bit/byte manipulation with less effot.
 
-4 Cascaded HC299s:
-
+### 4x Cascaded HC299s:</br>
 ![copy_7B411B78-0BCC-41CA-9921-27DE1CC53947(1)](https://github.com/user-attachments/assets/a520a8b1-6a09-43f3-8d23-76bba41a02a1)
+
+### EEPROM Programmer example output
+<img width="1551" height="915" alt="74299_EEPROMPROG_DMP" src="https://github.com/user-attachments/assets/5b06b8b3-acc7-4df6-99d8-b4b799aa3b68" />
+
 
 # USAGE:
 please read the [schematics](#cascading-schematic) first *carefully*.
