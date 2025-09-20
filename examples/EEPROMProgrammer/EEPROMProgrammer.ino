@@ -43,6 +43,7 @@ void serialPinToggle() {
   }
 }
 void dump() {
+  Serial.println("Dumping EEPROM data...");
   char readbyte;
   for (int i = 0; i < 50; i+=16) {
     Serial.print("[");Serial.print(i, HEX); Serial.print("] \t");
@@ -52,15 +53,13 @@ void dump() {
     Serial.print("\t");
     for (int j = 0; j < 16; j++) {
       readbyte = (char)readAt(i + j);
+      Serial.print('.');
       if (isAlphaNumeric(readbyte)) {
         Serial.print((char)readAt(i + j)); 
       } else {
         Serial.print(' ');
       }
-      Serial.print('.');
-      
     }
-    
     Serial.println();
   }
 }
