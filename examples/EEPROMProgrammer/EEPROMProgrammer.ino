@@ -15,9 +15,9 @@ void setup() {
 
   SR.begin( (uint64_t)0x7 << _CS ); //Start with _CS _OE _WE set HIGH
 
-  SR.pinWrite(_WE, HIGH);
-  SR.pinWrite(_OE, HIGH);
-  SR.pinWrite(_CS, HIGH);
+  //SR.pinWrite(_WE, HIGH);
+  //SR.pinWrite(_OE, HIGH);
+  //SR.pinWrite(_CS, HIGH);
 
 }
 void serialPinToggle() {
